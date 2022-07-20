@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <style>
+        #clock {
+            font-size: 5rem;
+            border: 3px solid darkblue;
+            background-color: lightblue;
+            margin: 30px 100px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        #hour {
+            color: red;
+        }
+
+        #min {
+            color: green;
+        }
+
+        #sec {
+            color: blue;
+        }
+
+        button {
+            font-size: 2rem;
+            background-color: rgb(36, 216, 36);
+            color: white;
+            padding: 5px 10px;
+            margin: 10px;
+            border-radius: 12px;
+        }
+
+        button:hover {
+            background-color: antiquewhite;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- the container of the clock  -->
+    <div id="clock">
+        <span id="hour">hh</span><span>:</span>
+        <span id="min">mm</span><span>:</span>
+        <span id="sec">ss</span>
+        <br>
+        <button value="start" id="start" onclick="clockStart()">start</button>
+        <button value="stop" id="stop" onclick="clockStop()">stop</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
